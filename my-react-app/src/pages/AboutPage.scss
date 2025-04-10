@@ -1,0 +1,248 @@
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 40px;
+}
+
+.about-heading {
+  text-align: center;
+  color: var(--white);
+
+  h2 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 44.2px;
+  }
+}
+
+.about-card {
+  max-width: 488px;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(270deg, #101113 0%, rgba(16, 17, 19, 0) 100%);
+  border-right: 1px solid #343a40;
+  border-top-right-radius: 17px;
+  border-bottom-right-radius: 17px;
+  gap: 8px;
+
+  p {
+    color: var(--dark2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.8px;
+  }
+}
+
+.about-card-2 {
+  max-width: 488px;
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, #101113 0%, rgba(16, 17, 19, 0) 100%);
+  border-left: 1px solid #343a40;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  gap: 8px;
+
+  p {
+    color: var(--dark2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.8px;
+  }
+}
+
+.about-card-name {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.9px;
+  }
+
+  img {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+.badge {
+  display: flex;
+  gap: 6px;
+}
+
+.badge-1 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  background: linear-gradient(88.61deg, #4c6ef5 0.31%, #15aabf 99.5%);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-2 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  background: linear-gradient(88.61deg, #12b886 0.31%, #82c91e 99.5%);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-3 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(88.61deg, #fd7e14 0.31%, #fa5252 99.5%);
+}
+
+.badge-4 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(88.61deg, #ed6ea0 0.31%, #ec8c69 99.5%);
+}
+
+.badge-5 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  background: linear-gradient(88.61deg, #12b886 0.31%, #82c91e 99.5%);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-6 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(88.61deg, #fd7e14 0.31%, #fa5252 99.5%);
+}
+
+.badge-7 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(88.61deg, #786eed 0.31%, #ba69ec 99.5%);
+}
+
+.badge-8 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  background: linear-gradient(88.61deg, #12b886 0.31%, #82c91e 99.5%);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-9 {
+  padding: 1px 13px;
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(88.61deg, #fd7e14 0.31%, #fa5252 99.5%);
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 150px;
+
+  p {
+    color: var(--dark3);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18.6px;
+  }
+}
+
+.languages-icons {
+  display: flex;
+  gap: 69px;
+  opacity: 30%;
+
+  img {
+    width: 20.64px;
+    height: 20.74px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+
+  .about-heading {
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .about-card {
+    max-width: 100%;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .languages {
+    padding-bottom: 60px;
+  }
+
+  .languages-icons {
+    gap: 50px;
+  }
+}
