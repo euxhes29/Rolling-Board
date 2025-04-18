@@ -22,7 +22,14 @@ const signUpSchema = z.object({
     .min(3, { message: "Username must have at least 3 characters!" }),
   password: z
     .string()
-    .min(6, { message: "Password must have at least 6 characters!" }),
+    .min(6, { message: "Password must have at least 6 characters!" })
+    .regex(/[A-Z]/, {
+      message: "Must have at least one uppercase letter!",
+    })
+    .regex(/\d/, { message: "There must be at least one number!" })
+    .regex(/[!@#$%^&*]/, {
+      message: "It must contain at least one special character (!@#$%^&*)!",
+    }),
 });
 
 const SignUp = () => {
