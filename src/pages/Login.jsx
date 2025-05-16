@@ -9,7 +9,7 @@ import AuthService from "../service/AuthService";
 import { useNavigate } from "react-router-dom";
 import InputField from "../components/InputField/InputField";
 import Button from "../components/Button/Buttons";
-import { FormProvider } from "../components/InputField/FormContext"; // Importimi i FormProvider
+import { FormProvider } from "../components/InputField/FormContext";
 
 const loginSchema = z.object({
   email: z.string().email({ message: "Invalid email format!" }),
@@ -76,7 +76,7 @@ const Login = () => {
           <div className="icon-x">
             <img src="/assets/images/x.png" alt="Close" />
           </div>
-          <FormProvider value={{ register, errors }}> {/* FormProvider vendoset këtu */}
+          <FormProvider value={{ register, errors }}>
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-content">
                 <h3>Log in to your account</h3>
