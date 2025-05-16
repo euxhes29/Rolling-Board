@@ -1,0 +1,40 @@
+:root {
+  --font-family-main: "Open Sans", sans-serif;
+  --white: #ffffff;
+  --black: #000000;
+  --dark0: #f8f9fa;
+  --dark5: #adb5bd;
+  --dark6: #25262b;
+  --dark2: #909296;
+  --dark3: #5c5f66;
+  --cyan7: #1098ad;
+  --dark8: #343a40;
+  --dark9: #101113;
+  --card-background: linear-gradient(
+    180deg,
+    #101113 0%,
+    rgba(16, 17, 19, 0) 100%
+  );
+  --card-border: linear-gradient(180deg, #343a40 0%, rgba(52, 58, 64, 0) 100%);
+  --section-card-background: linear-gradient(
+    180deg,
+    #0d0d0d 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --section-card-border: linear-gradient(
+    180deg,
+    #404040 0%,
+    rgba(73, 80, 87, 0) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-main);
+}
+
+body {
+  background-color: var(--black);
+}
