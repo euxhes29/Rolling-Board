@@ -1,0 +1,81 @@
+.btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10 20px;
+  color: var(--white);
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color, ease 0.5s;
+}
+
+.btn-text:hover {
+  color: var(--dark2);
+}
+
+.btn-ghost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background: none;
+  border: 1.5px solid var(--white);
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color, ease 0.5s;
+}
+
+.btn-ghost:hover {
+  background-color: var(--cyan7);
+  border: 1.5px solid var(--cyan7);
+}
+
+.btn-hover {
+  margin-top: 40px;
+  padding: 4px 14px;
+  background-color: var(--cyan7);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27.9px;
+  transition: background-color, color, ease 0.5s;
+  cursor: pointer;
+}
+
+.btn-hover:hover {
+  background-color: var(--white);
+  color: var(--cyan7);
+}
+
+.btn-solid {
+  padding: 10px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark6);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.8px;
+  color: var(--white);
+  transition: background-color, ease 0.5s;
+  cursor: pointer;
+}
+
+.btn-solid:hover {
+  background-color: var(--dark8);
+}

@@ -1,0 +1,85 @@
+.projects-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects-card-1 {
+  background: linear-gradient(180deg, #320606 0%, rgba(19, 5, 5, 0) 100%);
+}
+
+.projects-card-2 {
+  background: linear-gradient(180deg, #321e06 0%, rgba(19, 5, 5, 0) 100%);
+}
+
+.projects-card-3 {
+  background: linear-gradient(180deg, #063218 0%, rgba(19, 5, 5, 0) 100%);
+}
+
+.projects-card-4 {
+  background: linear-gradient(180deg, #320630 0%, rgba(19, 5, 5, 0) 100%);
+}
+
+.projects-card-5 {
+  background: linear-gradient(180deg, #091c43 0%, rgba(16, 17, 19, 0) 100%);
+}
+
+.projects-card-6 {
+  background: linear-gradient(180deg, #09201e 0%, rgba(16, 17, 19, 0) 100%);
+}
+
+.projects-card-7 {
+  background: linear-gradient(180deg, #191d09 0%, rgba(16, 17, 19, 0) 100%);
+}
+
+.projects-card-8 {
+  background: linear-gradient(180deg, #343a40 0%, rgba(52, 58, 64, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-card-create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  color: var(--white);
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects-cards {
+    gap: 10px !important;
+  }
+
+  .project-card {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+
+  .projects-card-create {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .projects-card-description {
+    p {
+      font-size: 14px;
+    }
+  }
+}
