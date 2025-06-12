@@ -1,0 +1,184 @@
+.tasks-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.column-tasks {
+  max-width: 296px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #343a40;
+  background-color: #141517;
+}
+
+.backlog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.9px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: var(--dark6);
+  border-radius: 7px;
+  position: relative;
+  transition: border, ease 0.5s;
+  cursor: pointer;
+
+  p {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.8px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity, ease 0.5s;
+    cursor: pointer;
+  }
+}
+
+.task:hover img {
+  opacity: 1;
+}
+
+.task:hover {
+  border: 1px solid #909296;
+}
+
+.add-task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  h3 {
+    color: var(--white);
+    font-size: 18px;
+    line-height: 27.9px;
+  }
+}
+
+.add-column {
+  max-width: 295px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #495057;
+  color: var(--white);
+  gap: 27px;
+  max-height: 60px;
+  cursor: pointer;
+
+  img {
+    width: 14px;
+    height: 14px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tasks-container {
+    gap: 15px;
+  }
+
+  .column-tasks {
+    max-width: 100%;
+  }
+
+  .backlog {
+    h3 {
+      font-size: 16px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .task {
+    p {
+      font-size: 14px;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .add-task {
+    img {
+      width: 10px;
+      height: 10px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .add-column {
+    max-width: 160px;
+    gap: 15px;
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}

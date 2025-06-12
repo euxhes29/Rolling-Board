@@ -1,0 +1,93 @@
+.project-card {
+  max-width: 250px;
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  gap: 27px;
+  position: relative;
+  cursor: pointer;
+  transition: transform, ease 0.5s;
+}
+
+.project-card:hover {
+  transform: translateY(-20px);
+}
+
+.projects-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+
+  h3 {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27.9px;
+  }
+
+  p {
+    color: var(--dark2);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.8px;
+  }
+}
+
+.projects-card-buttons {
+  display: flex;
+  gap: 8px;
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 8.5px 18px;
+    background-color: var(--dark6);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21.7px;
+    outline: none;
+    border: none;
+    transition: background-color, ease 0.5s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: var(--dark8);
+  }
+}
+
+.projects-card-buttons {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-card:hover .projects-card-buttons {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .project-card {
+    max-width: 100%;
+    padding: 40px 20px;
+  }
+
+  .projects-card-description {
+    p {
+      font-size: 14px;
+    }
+  }
+}
