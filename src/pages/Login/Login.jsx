@@ -2,15 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./Login.scss";
-import AuthService from "../service/AuthService";
+import AuthService from "../../service/AuthService";
 import { useNavigate } from "react-router-dom";
-import InputField from "../components/InputField/InputField";
-import Button from "../components/Button/Buttons";
-import UserService from "../service/UserService";
-import { useUserStore } from "../store/userStore";
+import InputField from "../../components/InputField/InputField";
+import Button from "../../components/Button/Buttons";
+import UserService from "../../service/UserService";
+import { useUserStore } from "../../store/userStore";
 
 const loginSchema = z.object({
   email: z.string().email({ message: "Invalid email format!" }),

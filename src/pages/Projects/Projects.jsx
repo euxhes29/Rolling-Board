@@ -1,8 +1,8 @@
 import React from "react";
-import "../pages/Projects.scss";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import ProjectsCards from "../components/Cards/ProjectsCards";
+import "../Projects/Projects.scss";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import ProjectsCards from "../../components/Cards/ProjectsCards";
 
 const Projects = () => {
   return (

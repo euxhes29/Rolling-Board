@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
-import TaskCards from "../components/Tasks/TaskCards";
-import "../pages/Package.scss";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import TaskCards from "../../components/Tasks/TaskCards";
+import "../Package/Package.scss";
 
 const Package = () => {
   return (

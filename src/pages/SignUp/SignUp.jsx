@@ -2,12 +2,12 @@ import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./SignUp.scss";
-import AuthService from "../service/AuthService";
-import InputField from "../components/InputField/InputField";
-import Button from "../components/Button/Buttons";
+import AuthService from "../../service/AuthService";
+import InputField from "../../components/InputField/InputField";
+import Button from "../../components/Button/Buttons";
 
 const signUpSchema = z.object({
   firstName: z
