@@ -3,11 +3,11 @@ import "./CreateTask.scss";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import Popup from "./Popup";
-import InputField from "../InputField/InputField";
-import TextareaField from "../TextAreaField/TextAreaField";
-import SelectField from "../SelectField/SelectField";
-import TaskService from "../../service/TaskService";
+import Popup from "../Popup";
+import InputField from "../../InputField/InputField";
+import TextareaField from "../../TextAreaField/TextAreaField";
+import SelectField from "../../SelectField/SelectField";
+import TaskService from "../../../service/TaskService";
 
 const CreateTaskSchema = z.object({
   taskName: z.string().min(3, "Task name must have at least 3 characters"),

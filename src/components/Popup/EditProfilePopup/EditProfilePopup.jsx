@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./EditProfilePopup.scss";
-import { useUserStore } from "../../store/userStore";
-import UserService from "../../service/UserService";
+import { useUserStore } from "../../../store/userStore";
+import UserService from "../../../service/UserService";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import InputField from "../InputField/InputField";
-import Popup from "../Popup/Popup";
-import Button from "../Button/Buttons";
+import InputField from "../../InputField/InputField";
+import Popup from "../Popup";
+import Button from "../../Button/Buttons";
 
 const formSchema = z.object({
   firstname: z

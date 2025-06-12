@@ -3,11 +3,11 @@ import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import "./TaskPopup.scss";
-import TaskService from "../../service/TaskService";
-import Popup from "./Popup";
-import InputField from "../InputField/InputField";
-import TextareaField from "../TextAreaField/TextAreaField";
-import SelectField from "../SelectField/SelectField";
+import TaskService from "../../../service/TaskService";
+import Popup from "../Popup";
+import InputField from "../../InputField/InputField";
+import TextareaField from "../../TextAreaField/TextAreaField";
+import SelectField from "../../SelectField/SelectField";
 
 const TaskPopup = ({ closePopup, currentTaskId, handleSaveTask }) => {
   return (

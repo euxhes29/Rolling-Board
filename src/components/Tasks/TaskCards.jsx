@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import TaskPopup from "../Popup/TaskPopup";
+import TaskPopup from "../Popup/TaskPopup/TaskPopup";
 import "./TaskCards.scss";
 import { useParams } from "react-router-dom";
 import TaskService from "../../service/TaskService";
-import CreateTask from "../Popup/CreateTask";
-import CreateColumn from "../Popup/CreateColumn";
+import CreateTask from "../Popup/CreateTask/CreateTask";
+import CreateColumn from "../Popup/CreateColumn/CreateColumn";
 
 const TaskCards = () => {
   const [columns, setColumns] = useState([]);

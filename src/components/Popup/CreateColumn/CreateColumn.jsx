@@ -1,9 +1,9 @@
 import React from "react";
-import Popup from "../Popup/Popup";
+import Popup from "../Popup";
 import { useForm, FormProvider } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import InputField from "../InputField/InputField";
+import InputField from "../../InputField/InputField";
 
 const CreateColumnSchema = z.object({
   columnName: z.string().min(3, "Column name must have at least 3 characters"),

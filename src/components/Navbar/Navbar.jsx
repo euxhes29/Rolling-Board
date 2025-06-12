@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "../Button/Buttons";
-import EditProfilePopup from "../Popup/EditProfilePopup";
+import EditProfilePopup from "../Popup/EditProfilePopup/EditProfilePopup";
 import "./Navbar.scss";
 
 const Navbar = () => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProjectsCards.scss";
-import EditProjectPopup from "../Popup/EditProjectPopup";
+import EditProjectPopup from "../Popup/EditProjectPopup/EditProjectPopup";
 import ProjectService from "../../service/ProjectService";
 import ProjectCard from "./ProjectCard";
 
